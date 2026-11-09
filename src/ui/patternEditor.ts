@@ -183,7 +183,7 @@ export function buildPatternEditor(app: App, playhead: PlayheadState) {
     });
     (label as HTMLElement & { sync?: () => void }).sync = () => {
       const tr = t();
-      name.textContent = tr.name;
+      name.textContent = app.trackName(id);
       name.classList.toggle('custom', !!tr.sampleId);
       if (tr.sampleId) name.title = `Custom sample: ${store.project.samples[tr.sampleId]?.name ?? ''}`;
       m.classList.toggle('active', tr.mute);

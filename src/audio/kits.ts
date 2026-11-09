@@ -9,6 +9,8 @@ export interface KitInfo {
   source: 'synth' | 'sample';
   /** Preset id used when previewing this kit over an empty pattern. */
   demo: string;
+  /** Track display names for this kit, e.g. clap → "Brush Stir". */
+  labels: Partial<Record<TrackId, string>>;
 }
 
 /**
@@ -34,6 +36,8 @@ interface SampleKitManifest {
   sounds: Partial<Record<TrackId, SoundSpec>>;
   /** Optional linear gain per track, to balance quiet or loud samples. */
   gain?: Partial<Record<TrackId, number>>;
+  /** Optional display names for tracks whose sound differs from the default name. */
+  labels?: Partial<Record<TrackId, string>>;
 }
 
 /** Choose a velocity layer: the range 0..1 is split evenly between layers. */
@@ -58,7 +62,7 @@ function isManifest(x: unknown): x is SampleKitManifest {
 }
 
 export class KitLibrary {
-  kits: KitInfo[] = SYNTH_KITS.map((k) => ({ id: k.id, name: k.name, description: k.description, source: 'synth', demo: k.demo }));
+  kits: KitInfo[] = SYNTH_KITS.map((k) => ({ id: k.id, name: k.name, description: k.description, source: 'synth', demo: k.demo, labels: {} }));
   private manifests = new Map<string, SampleKitManifest>();
   private cache = new Map<string, Promise<KitSounds>>();
   private loaded = new Map<string, KitSounds>();
@@ -74,7 +78,12 @@ export class KitLibrary {
       for (const m of json.kits ?? []) {
         if (!isManifest(m) || this.manifests.has(m.id)) continue;
         this.manifests.set(m.id, m);
-        sampled.push({ id: m.id, name: m.name, description: m.description ?? '', source: 'sample', demo: m.demo ?? 'rock' });
+        const labels: Partial<Record<TrackId, string>> = {};
+        for (const t of TRACK_IDS) {
+          const l = m.labels?.[t];
+          if (typeof l === 'string' && l.trim()) labels[t] = l.trim().slice(0, 30);
+        }
+        sampled.push({ id: m.id, name: m.name, description: m.description ?? '', source: 'sample', demo: m.demo ?? 'rock', labels });
       }
       this.kits = [...sampled, ...this.kits];
     } catch (err) {

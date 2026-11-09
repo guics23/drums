@@ -93,6 +93,16 @@ export const PRESETS: PresetDef[] = [
     },
   },
   {
+    id: 'jazz', name: 'Jazz Brushes', bpm: 132, beats: 4, subdivision: 3,
+    rows: {
+      ride:  'x.. x.x x.. x.x',
+      chh:   '... x.. ... x..',
+      kick:  'o.. o.. o.. o..',
+      clap:  'x.. ... x.. ...',
+      snare: '... ... ... ..o',
+    },
+  },
+  {
     id: 'afro68', name: 'Afro 6/8', bpm: 105, beats: 4, subdivision: 3,
     rows: {
       kick:    'X.. ... x.. ...',

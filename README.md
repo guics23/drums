@@ -51,6 +51,7 @@ Put the audio files in `public/kits/<folder>/` and add an entry to `public/kits/
   A layer can itself be an array of round-robin files, which are cycled through on repeated hits:
   `"snare": [["sn-01.wav", "sn-02.wav", "sn-03.wav"]]` is one layer with three variations.
 - Missing tracks use the `fallback` kit's sound. `gain` (optional) is a linear multiplier to balance quiet samples.
+- `labels` (optional) renames tracks for this kit, e.g. `{ "clap": "Brush Stir" }`.
 - `demo` is the groove id used when previewing the kit over an empty pattern (see `src/model/presets.ts`).
 - Any format the browser decodes works (WAV, MP3, OGG, FLAC).
 
@@ -58,6 +59,8 @@ Put the audio files in `public/kits/<folder>/` and add an entry to `public/kits/
 
 - `public/kits/gm-rock`: GMRockKit by Glen MacArthur / Sebastian Moors
 - `public/kits/tr808-emu`: TR808EmulationKit by ArtemioLabs (converted from FLAC to WAV)
+- `public/kits/brushes`: built from [Swirly Drums](https://shop.karoryfer.com/pages/free-swirly-drums) by Karoryfer
+  Samples, CC0 (see the folder's `SOURCE.txt`; `scripts/build_brushes.py` rebuilds it from the original download)
 - `public/kits/ludwig-60s`: 1960s Ludwig Oyster Blue Pearl kit with Zildjian cymbals by Scott McLean, free-use
   license ([REAPER forum](https://forums.cockos.com/showthread.php?p=1414567); see the folder's `SOURCE.txt`)
 

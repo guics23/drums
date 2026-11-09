@@ -8,84 +8,18 @@
       "demo": "rock",
       "fallback": "synth-analog",
       "sounds": {
-        "kick": [
-          "Kick-Softest.wav",
-          "Kick-Soft.wav",
-          "Kick-Med.wav",
-          "Kick-Hard.wav",
-          "Kick-Hardest.wav"
-        ],
-        "snare": [
-          "Snare-Softest.wav",
-          "Snare-Soft.wav",
-          "Snare-Med.wav",
-          "Snare-Hard.wav",
-          "Snare-Hardest.wav"
-        ],
+        "kick": ["Kick-Softest.wav", "Kick-Soft.wav", "Kick-Med.wav", "Kick-Hard.wav", "Kick-Hardest.wav"],
+        "snare": ["Snare-Softest.wav", "Snare-Soft.wav", "Snare-Med.wav", "Snare-Hard.wav", "Snare-Hardest.wav"],
         "clap": "HandClap.wav",
-        "rim": [
-          "SideStick-Softest.wav",
-          "SideStick-Soft.wav",
-          "SideStick-Med.wav",
-          "SideStick-Hard.wav",
-          "SideStick-Hardest.wav"
-        ],
-        "chh": [
-          "HatClosed-Softest.wav",
-          "HatClosed-Soft.wav",
-          "HatClosed-Med.wav",
-          "HatClosed-Hard.wav",
-          "HatClosed-Hardest.wav"
-        ],
-        "ohh": [
-          "HatOpen-Softest.wav",
-          "HatOpen-Soft.wav",
-          "HatOpen-Med.wav",
-          "HatOpen-Hard.wav",
-          "HatOpen-Hardest.wav"
-        ],
-        "ltom": [
-          "TomFloor-Softest.wav",
-          "TomFloor-Soft.wav",
-          "TomFloor-Med.wav",
-          "TomFloor-Hard.wav",
-          "TomFloor-Hardest.wav"
-        ],
-        "mtom": [
-          "Tom2-Softest.wav",
-          "Tom2-Soft.wav",
-          "Tom2-Med.wav",
-          "Tom2-Hard.wav",
-          "Tom2-Hardest.wav"
-        ],
-        "htom": [
-          "Tom1-Softest.wav",
-          "Tom1-Soft.wav",
-          "Tom1-Med.wav",
-          "Tom1-Hard.wav",
-          "Tom1-Hardest.wav"
-        ],
-        "crash": [
-          "Crash-Softest.wav",
-          "Crash-Soft.wav",
-          "Crash-Med.wav",
-          "Crash-Hard.wav",
-          "Crash-Hardest.wav"
-        ],
-        "ride": [
-          "Ride-Softest.wav",
-          "Ride-Soft.wav",
-          "Ride-Med.wav",
-          "Ride-Hard.wav",
-          "Ride-Hardest.wav"
-        ],
-        "cowbell": [
-          "Cowbell-Softest.wav",
-          "Cowbell-Soft.wav",
-          "Cowbell-Med.wav",
-          "Cowbell-Hard.wav",
-          "Cowbell-Hardest.wav"
-        ]
+        "rim": ["SideStick-Softest.wav", "SideStick-Soft.wav", "SideStick-Med.wav", "SideStick-Hard.wav", "SideStick-Hardest.wav"],
+        "chh": ["HatClosed-Softest.wav", "HatClosed-Soft.wav", "HatClosed-Med.wav", "HatClosed-Hard.wav", "HatClosed-Hardest.wav"],
+        "ohh": ["HatOpen-Softest.wav", "HatOpen-Soft.wav", "HatOpen-Med.wav", "HatOpen-Hard.wav", "HatOpen-Hardest.wav"],
+        "ltom": ["TomFloor-Softest.wav", "TomFloor-Soft.wav", "TomFloor-Med.wav", "TomFloor-Hard.wav", "TomFloor-Hardest.wav"],
+        "mtom": ["Tom2-Softest.wav", "Tom2-Soft.wav", "Tom2-Med.wav", "Tom2-Hard.wav", "Tom2-Hardest.wav"],
+        "htom": ["Tom1-Softest.wav", "Tom1-Soft.wav", "Tom1-Med.wav", "Tom1-Hard.wav", "Tom1-Hardest.wav"],
+        "crash": ["Crash-Softest.wav", "Crash-Soft.wav", "Crash-Med.wav", "Crash-Hard.wav", "Crash-Hardest.wav"],
+        "ride": ["Ride-Softest.wav", "Ride-Soft.wav", "Ride-Med.wav", "Ride-Hard.wav", "Ride-Hardest.wav"],
+        "cowbell": ["Cowbell-Softest.wav", "Cowbell-Soft.wav", "Cowbell-Med.wav", "Cowbell-Hard.wav", "Cowbell-Hardest.wav"]
       }
     },
     {
@@ -97,103 +31,116 @@
       "fallback": "gm-rock",
       "sounds": {
         "kick": [
-          [
-            "K68c01.wav",
-            "K68c02.wav",
-            "K68c03.wav",
-            "K68c04.wav",
-            "K68c05.wav",
-            "K68c06.wav",
-            "K68c07.wav",
-            "K68c08.wav",
-            "K68c09.wav"
-          ]
+          ["K68c01.wav", "K68c02.wav", "K68c03.wav", "K68c04.wav", "K68c05.wav", "K68c06.wav", "K68c07.wav", "K68c08.wav", "K68c09.wav"]
         ],
         "snare": [
-          [
-            "Sn65aa01.wav",
-            "Sn65aa02.wav",
-            "Sn65aa03.wav",
-            "Sn65aa04.wav",
-            "Sn65aa05.wav",
-            "Sn65aa06.wav",
-            "Sn65aa07.wav",
-            "Sn65aa08.wav",
-            "Sn65aa09.wav"
-          ]
+          ["Sn65aa01.wav", "Sn65aa02.wav", "Sn65aa03.wav", "Sn65aa04.wav", "Sn65aa05.wav", "Sn65aa06.wav", "Sn65aa07.wav", "Sn65aa08.wav", "Sn65aa09.wav"]
         ],
         "chh": [
-          [
-            "HHC14a01.wav",
-            "HHC14a02.wav",
-            "HHC14a03.wav",
-            "HHC14a04.wav",
-            "HHC14a05.wav",
-            "HHC14a06.wav",
-            "HHC14a07.wav",
-            "HHC14a08.wav",
-            "HHC14a09.wav"
-          ]
+          ["HHC14a01.wav", "HHC14a02.wav", "HHC14a03.wav", "HHC14a04.wav", "HHC14a05.wav", "HHC14a06.wav", "HHC14a07.wav", "HHC14a08.wav", "HHC14a09.wav"]
         ],
         "ohh": "HHO14a01.wav",
         "ltom": [
-          [
-            "T369c01.wav",
-            "T369c02.wav",
-            "T369c03.wav",
-            "T369c04.wav",
-            "T369c05.wav",
-            "T369c06.wav",
-            "T369c07.wav",
-            "T369c08.wav",
-            "T369c09.wav"
-          ]
+          ["T369c01.wav", "T369c02.wav", "T369c03.wav", "T369c04.wav", "T369c05.wav", "T369c06.wav", "T369c07.wav", "T369c08.wav", "T369c09.wav"]
         ],
         "mtom": [
-          [
-            "T269c01.wav",
-            "T269c02.wav",
-            "T269c03.wav",
-            "T269c04.wav",
-            "T269c05.wav",
-            "T269c06.wav",
-            "T269c07.wav",
-            "T269c08.wav",
-            "T269c09.wav"
-          ]
+          ["T269c01.wav", "T269c02.wav", "T269c03.wav", "T269c04.wav", "T269c05.wav", "T269c06.wav", "T269c07.wav", "T269c08.wav", "T269c09.wav"]
         ],
         "htom": [
-          [
-            "T169c01.wav",
-            "T169c02.wav",
-            "T169c03.wav",
-            "T169c04.wav",
-            "T169c05.wav",
-            "T169c06.wav",
-            "T169c07.wav",
-            "T169c08.wav",
-            "T169c09.wav"
-          ]
+          ["T169c01.wav", "T169c02.wav", "T169c03.wav", "T169c04.wav", "T169c05.wav", "T169c06.wav", "T169c07.wav", "T169c08.wav", "T169c09.wav"]
         ],
         "crash": [
-          [
-            "CC17a23.wav",
-            "CC17a24.wav"
-          ]
+          ["CC17a23.wav", "CC17a24.wav"]
         ],
         "ride": [
-          [
-            "RC20a01.wav",
-            "RC20a02.wav",
-            "RC20a03.wav",
-            "RC20a04.wav",
-            "RC20a05.wav",
-            "RC20a06.wav",
-            "RC20a07.wav",
-            "RC20a08.wav",
-            "RC20a09.wav"
-          ]
+          ["RC20a01.wav", "RC20a02.wav", "RC20a03.wav", "RC20a04.wav", "RC20a05.wav", "RC20a06.wav", "RC20a07.wav", "RC20a08.wav", "RC20a09.wav"]
         ]
+      }
+    },
+    {
+      "id": "brushes",
+      "name": "Brushes",
+      "description": "Jazz-style kit played with brushes: soft marching kick, brush stirs (Karoryfer Swirly Drums, CC0)",
+      "dir": "brushes",
+      "demo": "jazz",
+      "fallback": "gm-rock",
+      "sounds": {
+        "kick": [
+          ["kick_v1_rr1.wav", "kick_v1_rr2.wav", "kick_v1_rr3.wav", "kick_v1_rr4.wav"],
+          ["kick_v2_rr1.wav", "kick_v2_rr2.wav", "kick_v2_rr3.wav", "kick_v2_rr4.wav"],
+          ["kick_v3_rr1.wav", "kick_v3_rr2.wav", "kick_v3_rr3.wav", "kick_v3_rr4.wav"],
+          ["kick_v4_rr1.wav", "kick_v4_rr2.wav", "kick_v4_rr3.wav", "kick_v4_rr4.wav"]
+        ],
+        "snare": [
+          ["snare_v1_rr1.wav", "snare_v1_rr2.wav", "snare_v1_rr3.wav", "snare_v1_rr4.wav"],
+          ["snare_v2_rr1.wav", "snare_v2_rr2.wav", "snare_v2_rr3.wav", "snare_v2_rr4.wav"],
+          ["snare_v3_rr1.wav", "snare_v3_rr2.wav", "snare_v3_rr3.wav", "snare_v3_rr4.wav"],
+          ["snare_v4_rr1.wav", "snare_v4_rr2.wav", "snare_v4_rr3.wav", "snare_v4_rr4.wav"]
+        ],
+        "clap": [
+          ["stir_v1_rr1.wav", "stir_v1_rr2.wav", "stir_v1_rr3.wav", "stir_v1_rr4.wav"],
+          ["stir_v2_rr1.wav", "stir_v2_rr2.wav", "stir_v2_rr3.wav", "stir_v2_rr4.wav"],
+          ["stir_v3_rr1.wav", "stir_v3_rr2.wav", "stir_v3_rr3.wav", "stir_v3_rr4.wav"],
+          ["stir_v4_rr2.wav", "stir_v4_rr3.wav", "stir_v4_rr4.wav"]
+        ],
+        "rim": [
+          ["rim_v1_rr1.wav", "rim_v1_rr2.wav", "rim_v1_rr3.wav", "rim_v1_rr4.wav"],
+          ["rim_v2_rr1.wav", "rim_v2_rr2.wav", "rim_v2_rr3.wav", "rim_v2_rr4.wav"],
+          ["rim_v3_rr1.wav", "rim_v3_rr2.wav", "rim_v3_rr3.wav", "rim_v3_rr4.wav"],
+          ["rim_v4_rr1.wav", "rim_v4_rr2.wav", "rim_v4_rr3.wav", "rim_v4_rr4.wav"]
+        ],
+        "chh": [
+          ["chh_v1_rr1.wav", "chh_v1_rr2.wav", "chh_v1_rr3.wav", "chh_v1_rr4.wav"],
+          ["chh_v2_rr1.wav", "chh_v2_rr2.wav", "chh_v2_rr3.wav", "chh_v2_rr4.wav"],
+          ["chh_v3_rr1.wav", "chh_v3_rr2.wav", "chh_v3_rr3.wav", "chh_v3_rr4.wav"],
+          ["chh_v4_rr1.wav", "chh_v4_rr2.wav", "chh_v4_rr3.wav", "chh_v4_rr4.wav"]
+        ],
+        "ohh": [
+          ["ohh_v1_rr1.wav", "ohh_v1_rr2.wav", "ohh_v1_rr3.wav", "ohh_v1_rr4.wav"],
+          ["ohh_v2_rr1.wav", "ohh_v2_rr2.wav", "ohh_v2_rr3.wav", "ohh_v2_rr4.wav"],
+          ["ohh_v3_rr1.wav", "ohh_v3_rr2.wav", "ohh_v3_rr3.wav", "ohh_v3_rr4.wav"],
+          ["ohh_v4_rr1.wav", "ohh_v4_rr2.wav", "ohh_v4_rr3.wav", "ohh_v4_rr4.wav"]
+        ],
+        "ltom": [
+          ["ltom_v1_rr1.wav", "ltom_v1_rr2.wav", "ltom_v1_rr3.wav", "ltom_v1_rr4.wav"],
+          ["ltom_v2_rr1.wav", "ltom_v2_rr2.wav", "ltom_v2_rr3.wav", "ltom_v2_rr4.wav"],
+          ["ltom_v3_rr1.wav", "ltom_v3_rr2.wav", "ltom_v3_rr3.wav", "ltom_v3_rr4.wav"],
+          ["ltom_v4_rr1.wav", "ltom_v4_rr2.wav", "ltom_v4_rr3.wav", "ltom_v4_rr4.wav"]
+        ],
+        "mtom": [
+          ["mtom_v1_rr1.wav", "mtom_v1_rr2.wav", "mtom_v1_rr3.wav", "mtom_v1_rr4.wav"],
+          ["mtom_v2_rr1.wav", "mtom_v2_rr2.wav", "mtom_v2_rr3.wav", "mtom_v2_rr4.wav"],
+          ["mtom_v3_rr1.wav", "mtom_v3_rr2.wav", "mtom_v3_rr3.wav", "mtom_v3_rr4.wav"],
+          ["mtom_v4_rr1.wav", "mtom_v4_rr2.wav", "mtom_v4_rr3.wav", "mtom_v4_rr4.wav"]
+        ],
+        "htom": [
+          ["htom_v1_rr1.wav", "htom_v1_rr2.wav", "htom_v1_rr3.wav", "htom_v1_rr4.wav"],
+          ["htom_v2_rr1.wav", "htom_v2_rr2.wav", "htom_v2_rr3.wav", "htom_v2_rr4.wav"],
+          ["htom_v3_rr1.wav", "htom_v3_rr2.wav", "htom_v3_rr3.wav", "htom_v3_rr4.wav"],
+          ["htom_v4_rr1.wav", "htom_v4_rr2.wav", "htom_v4_rr3.wav", "htom_v4_rr4.wav"]
+        ],
+        "crash": [
+          ["crash_v1_rr1.wav", "crash_v1_rr2.wav", "crash_v1_rr3.wav", "crash_v1_rr4.wav"],
+          ["crash_v2_rr1.wav", "crash_v2_rr2.wav", "crash_v2_rr3.wav", "crash_v2_rr4.wav"],
+          ["crash_v3_rr1.wav", "crash_v3_rr2.wav", "crash_v3_rr3.wav", "crash_v3_rr4.wav"],
+          ["crash_v4_rr1.wav", "crash_v4_rr2.wav", "crash_v4_rr3.wav", "crash_v4_rr4.wav"]
+        ],
+        "ride": [
+          ["ride_v1_rr1.wav", "ride_v1_rr2.wav", "ride_v1_rr3.wav", "ride_v1_rr4.wav"],
+          ["ride_v2_rr1.wav", "ride_v2_rr2.wav", "ride_v2_rr3.wav", "ride_v2_rr4.wav"],
+          ["ride_v3_rr1.wav", "ride_v3_rr2.wav", "ride_v3_rr3.wav", "ride_v3_rr4.wav"],
+          ["ride_v4_rr1.wav", "ride_v4_rr2.wav", "ride_v4_rr3.wav", "ride_v4_rr4.wav"]
+        ],
+        "cowbell": [
+          ["cowbell_v1_rr1.wav", "cowbell_v1_rr2.wav", "cowbell_v1_rr3.wav", "cowbell_v1_rr4.wav"],
+          ["cowbell_v2_rr1.wav", "cowbell_v2_rr2.wav", "cowbell_v2_rr3.wav", "cowbell_v2_rr4.wav"],
+          ["cowbell_v3_rr1.wav", "cowbell_v3_rr2.wav", "cowbell_v3_rr3.wav", "cowbell_v3_rr4.wav"],
+          ["cowbell_v4_rr1.wav", "cowbell_v4_rr2.wav", "cowbell_v4_rr3.wav", "cowbell_v4_rr4.wav"]
+        ]
+      },
+      "labels": {
+        "rim": "Snare Edge",
+        "clap": "Brush Stir"
       }
     },
     {

@@ -39,7 +39,7 @@ function buildMixer(app: App, b: Bindings): HTMLElement {
       resetBtn.hidden = !sample;
     });
     const name = h('button', { class: 'track-name', onclick: () => void app.auditionTrack(id) });
-    b.add(() => (name.textContent = track(id).name));
+    b.add(() => (name.textContent = app.trackName(id)));
     return h(
       'tr',
       null,

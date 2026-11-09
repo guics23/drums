@@ -1,4 +1,4 @@
-import { MAX_BPM, MIN_BPM, type Pattern, type Project, type Subdivision, type TrackId } from '../types';
+import { MAX_BPM, MIN_BPM, TRACK_NAMES, type Pattern, type Project, type Subdivision, type TrackId } from '../types';
 import { clonePattern, createPattern, isPatternEmpty, newId, resizePattern } from '../model/pattern';
 import { findPreset, patternFromPreset } from '../model/presets';
 import { resolveSequence } from '../model/timeline';
@@ -62,6 +62,13 @@ export class App {
 
   get project(): Project {
     return this.store.project;
+  }
+
+  /** Track name to show: the kit's label (e.g. "Brush Stir") unless the user renamed the track. */
+  trackName(id: TrackId): string {
+    const name = this.project.tracks.find((t) => t.id === id)?.name ?? TRACK_NAMES[id];
+    const label = this.kits.info(this.project.kitId)?.labels[id];
+    return label && name === TRACK_NAMES[id] ? label : name;
   }
 
   async init() {
