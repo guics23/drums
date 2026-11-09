@@ -1,5 +1,5 @@
 import { TRACK_IDS, type DelayDivision, type Effects, type Project, type Track, type TrackId } from '../types';
-import { pickLayer } from './kits';
+import { pickLayer, type Sound } from './kits';
 import { mulberry32 } from './synth';
 
 const DIVISION_BEATS: Record<DelayDivision, number> = {
@@ -73,6 +73,8 @@ export class MixGraph {
   private irKey = '';
   private routeKey = '';
   private openHat: Voice | null = null;
+  /** Round-robin position per track. */
+  private rrIndex = new Map<TrackId, number>();
 
   constructor(
     private ctx: BaseAudioContext,
@@ -175,8 +177,13 @@ export class MixGraph {
   }
 
   /** Schedule one hit. */
-  trigger(track: Track, time: number, velocity: number, layers: AudioBuffer[]) {
-    const buffer = pickLayer(layers, velocity);
+  trigger(track: Track, time: number, velocity: number, layers: Sound) {
+    const variations = pickLayer(layers, velocity);
+    if (!variations?.length) return;
+    // Cycle through round-robin variations so repeated hits don't sound identical.
+    const rr = this.rrIndex.get(track.id) ?? 0;
+    this.rrIndex.set(track.id, rr + 1);
+    const buffer = variations[rr % variations.length];
     const nodes = this.tracks.get(track.id);
     if (!buffer || !nodes) return;
     const rate = Math.pow(2, track.pitch / 12);

@@ -29,7 +29,7 @@ export async function renderWav(
     const track = tracks.get(ev.trackId);
     if (!track) continue;
     const custom = track.sampleId ? samples.get(track.sampleId) : undefined;
-    graph.trigger(track, ev.time, ev.velocity, custom ? [custom] : sounds[ev.trackId]);
+    graph.trigger(track, ev.time, ev.velocity, custom ? [[custom]] : sounds[ev.trackId]);
   }
   const rendered = await ctx.startRendering();
   const wav = encodeWav([rendered.getChannelData(0), rendered.getChannelData(1)], opts.sampleRate, opts.bitDepth);

@@ -330,7 +330,7 @@ export class App {
     const track = this.project.tracks.find((t) => t.id === id);
     if (!track) return;
     const custom = track.sampleId ? this.samples.get(track.sampleId) : undefined;
-    const sounds = custom ? [custom] : (await this.kits.load(this.project.kitId))[id];
+    const sounds = custom ? [[custom]] : (await this.kits.load(this.project.kitId))[id];
     // Audition ignores mute/solo so you can always hear what a row sounds like.
     this.graph.trigger({ ...track, mute: false, solo: false }, this.ctx.currentTime + 0.005, velocity, sounds);
   }

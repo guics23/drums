@@ -5,7 +5,7 @@ import { buildTimeline, resolveSequence, audibleTracks } from './model/timeline'
 import { PRESETS, parseRow, patternFromPreset } from './model/presets';
 import { TapTempo } from './model/tapTempo';
 import { encodeWav } from './audio/wav';
-import { pickLayer } from './audio/kits';
+import { parseSoundSpec, pickLayer } from './audio/kits';
 import { delaySeconds, dbToGain } from './audio/engine';
 import { createDefaultProject } from './state/defaults';
 import { normalizeProject, projectFromJson, projectToJson } from './state/serialize';
@@ -167,6 +167,13 @@ describe('audio helpers', () => {
     expect(pickLayer(layers, 1)).toBe('hardest');
     expect(pickLayer(['only'], 0.2)).toBe('only');
     expect(pickLayer([], 1)).toBeUndefined();
+  });
+  it('parses kit sound specs into layers of round robins', () => {
+    expect(parseSoundSpec('a.wav')).toEqual([['a.wav']]);
+    expect(parseSoundSpec(['soft.wav', 'hard.wav'])).toEqual([['soft.wav'], ['hard.wav']]);
+    expect(parseSoundSpec([['r1.wav', 'r2.wav'], 'hard.wav'])).toEqual([['r1.wav', 'r2.wav'], ['hard.wav']]);
+    expect(parseSoundSpec([[], 3, ['x.wav', 7]])).toEqual([['x.wav']]);
+    expect(parseSoundSpec(undefined)).toEqual([]);
   });
   it('computes tempo-synced delay times', () => {
     expect(delaySeconds('1/4', 120)).toBeCloseTo(0.5);

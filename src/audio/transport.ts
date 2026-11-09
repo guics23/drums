@@ -199,7 +199,7 @@ export class Transport {
       const track = project.tracks.find((t) => t.id === id);
       if (!track) continue;
       const custom = track.sampleId && !this.preview?.kitId ? this.deps.getSampleBuffer(track.sampleId) : undefined;
-      const layers = custom ? [custom] : sounds?.[id];
+      const layers = custom ? [[custom]] : sounds?.[id];
       if (layers) this.deps.graph.trigger(track, time, v, layers);
     }
     this.visualQueue.push({ time, patternId: pattern.id, songIndex: this.songIndex, step: this.step });

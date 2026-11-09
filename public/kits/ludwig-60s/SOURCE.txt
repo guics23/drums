@@ -1,0 +1,14 @@
+Source: "SM_LOBP_DrumKit_v01" (Scott McLean, Ludwig Oyster Blue Pearl drum kit), 9 round robin package
+Announced at https://forums.cockos.com/showthread.php?p=1414567 and https://forum.cockos.com/showthread.php?t=172831
+Download: https://www.dropbox.com/s/00q4unf5em56a8a/SM_LOBP_DrumKit_v01%28REAPER%29.zip
+
+License (from the package READ ME, see README-original.txt):
+  "Scott McLean is offering these drum and cymbal samples to the public royalty free (free of charge)
+   to use in any audio/video production for both commercial and private use. This is a "free use" license."
+
+Changes made here: converted from 24-bit to 16-bit (explicitly allowed by the author), and long cymbal tails
+trimmed with a fade-out (toms 3 s, open hat 4 s, crash 6 s, ride 5 s).
+
+Used: K68 kick, Sn65 snare, HHC14 closed hat, HHO14 open hat, T169/T269/T369 toms, CC17 crash, RC20 ride.
+Not included (available in the original package): HHL14 loose hat, HHF14 foot hat, CC13/CC15/CC16 crashes,
+WC15 china, RC17 ride, RCB17/RCB20 ride bells, reverb IRs.

@@ -48,6 +48,8 @@ Put the audio files in `public/kits/<folder>/` and add an entry to `public/kits/
 
 - Track ids: `kick snare clap rim chh ohh ltom mtom htom crash ride cowbell`.
 - An array gives velocity layers ordered soft → hard; the velocity range is split evenly between them.
+  A layer can itself be an array of round-robin files, which are cycled through on repeated hits:
+  `"snare": [["sn-01.wav", "sn-02.wav", "sn-03.wav"]]` is one layer with three variations.
 - Missing tracks use the `fallback` kit's sound. `gain` (optional) is a linear multiplier to balance quiet samples.
 - `demo` is the groove id used when previewing the kit over an empty pattern (see `src/model/presets.ts`).
 - Any format the browser decodes works (WAV, MP3, OGG, FLAC).
@@ -56,8 +58,10 @@ Put the audio files in `public/kits/<folder>/` and add an entry to `public/kits/
 
 - `public/kits/gm-rock`: GMRockKit by Glen MacArthur / Sebastian Moors
 - `public/kits/tr808-emu`: TR808EmulationKit by ArtemioLabs (converted from FLAC to WAV)
+- `public/kits/ludwig-60s`: 1960s Ludwig Oyster Blue Pearl kit with Zildjian cymbals by Scott McLean, free-use
+  license ([REAPER forum](https://forums.cockos.com/showthread.php?p=1414567); see the folder's `SOURCE.txt`)
 
-Both come from the [Hydrogen](https://github.com/hydrogen-music/hydrogen) drum machine and are licensed under the GPL
+The first two come from the [Hydrogen](https://github.com/hydrogen-music/hydrogen) drum machine and are licensed under the GPL
 (see each folder's `drumkit.xml` / `SOURCE.txt`).
 
 ## Code map
