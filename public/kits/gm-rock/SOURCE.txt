@@ -1,0 +1,3 @@
+Source: Hydrogen drum machine, data/drumkits (GMRockKit)
+https://github.com/hydrogen-music/hydrogen
+License: GPL (see drumkit.xml for author/license metadata)

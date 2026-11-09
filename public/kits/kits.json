@@ -1,0 +1,118 @@
+{
+  "kits": [
+    {
+      "id": "gm-rock",
+      "name": "Acoustic Rock",
+      "description": "Multi-velocity acoustic kit (Hydrogen GMRockKit, GPL)",
+      "dir": "gm-rock",
+      "demo": "rock",
+      "fallback": "synth-analog",
+      "sounds": {
+        "kick": [
+          "Kick-Softest.wav",
+          "Kick-Soft.wav",
+          "Kick-Med.wav",
+          "Kick-Hard.wav",
+          "Kick-Hardest.wav"
+        ],
+        "snare": [
+          "Snare-Softest.wav",
+          "Snare-Soft.wav",
+          "Snare-Med.wav",
+          "Snare-Hard.wav",
+          "Snare-Hardest.wav"
+        ],
+        "clap": "HandClap.wav",
+        "rim": [
+          "SideStick-Softest.wav",
+          "SideStick-Soft.wav",
+          "SideStick-Med.wav",
+          "SideStick-Hard.wav",
+          "SideStick-Hardest.wav"
+        ],
+        "chh": [
+          "HatClosed-Softest.wav",
+          "HatClosed-Soft.wav",
+          "HatClosed-Med.wav",
+          "HatClosed-Hard.wav",
+          "HatClosed-Hardest.wav"
+        ],
+        "ohh": [
+          "HatOpen-Softest.wav",
+          "HatOpen-Soft.wav",
+          "HatOpen-Med.wav",
+          "HatOpen-Hard.wav",
+          "HatOpen-Hardest.wav"
+        ],
+        "ltom": [
+          "TomFloor-Softest.wav",
+          "TomFloor-Soft.wav",
+          "TomFloor-Med.wav",
+          "TomFloor-Hard.wav",
+          "TomFloor-Hardest.wav"
+        ],
+        "mtom": [
+          "Tom2-Softest.wav",
+          "Tom2-Soft.wav",
+          "Tom2-Med.wav",
+          "Tom2-Hard.wav",
+          "Tom2-Hardest.wav"
+        ],
+        "htom": [
+          "Tom1-Softest.wav",
+          "Tom1-Soft.wav",
+          "Tom1-Med.wav",
+          "Tom1-Hard.wav",
+          "Tom1-Hardest.wav"
+        ],
+        "crash": [
+          "Crash-Softest.wav",
+          "Crash-Soft.wav",
+          "Crash-Med.wav",
+          "Crash-Hard.wav",
+          "Crash-Hardest.wav"
+        ],
+        "ride": [
+          "Ride-Softest.wav",
+          "Ride-Soft.wav",
+          "Ride-Med.wav",
+          "Ride-Hard.wav",
+          "Ride-Hardest.wav"
+        ],
+        "cowbell": [
+          "Cowbell-Softest.wav",
+          "Cowbell-Soft.wav",
+          "Cowbell-Med.wav",
+          "Cowbell-Hard.wav",
+          "Cowbell-Hardest.wav"
+        ]
+      }
+    },
+    {
+      "id": "tr808-emu",
+      "name": "808 Emulation",
+      "description": "Sampled 808 emulation (Hydrogen TR808EmulationKit, GPL)",
+      "dir": "tr808-emu",
+      "demo": "trap",
+      "fallback": "synth-analog",
+      "sounds": {
+        "kick": "808_Kick_Long.wav",
+        "snare": "808_Snare_1.wav",
+        "clap": "808_Clap.wav",
+        "rim": "808_Clave.wav",
+        "chh": "808_Hat_Closed.wav",
+        "ohh": "808_Hat_Open.wav",
+        "ltom": "808_Tom_Low.wav",
+        "mtom": "808_Tom_Mid.wav",
+        "htom": "808_Tom_Hi.wav",
+        "crash": "808_Cymbal.wav",
+        "cowbell": "808_Cowbell.wav"
+      },
+      "gain": {
+        "crash": 10,
+        "cowbell": 1.8,
+        "rim": 1.8
+      }
+    }
+  ]
+}
